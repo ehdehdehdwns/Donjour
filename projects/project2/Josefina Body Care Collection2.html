@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--<link href="index.css" rel="stylesheet" type="text/css">-->
+  <title>Josefina Body Care Collection2</title>
+<style>
+
+.background{
+  background-color: rgba(249, 251, 219, 1);
+}
+
+.josefina{
+  color: rgba(26, 74, 23, 1);
+  margin-left: 50px;
+  margin-top: 40px;
+}
+
+.horizontal{
+  display: block;
+  border-color: rgba(249, 251, 219, 1);
+  border-width: 3px;
+  margin-left: 40px;
+  margin-right: 50px;
+}
+
+.productname{
+  font-weight: bold;
+  color: rgba(167, 195, 127, 1);
+}
+
+.all{
+  text-align: center;
+  display: inline-block;
+  margin: 100px;
+}
+
+.show{
+  float: left;
+}
+
+.LinkModel{
+  background-color: black;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.modalWindow{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  rgba(55, 112, 20, 0.76);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modalWindow:target{
+  opacity: 1;
+  pointer-events: auto;
+  transition: ease-in 0.5s;
+}
+
+.msgText{
+  position: absolute;
+  width: 700px;
+  height: 500px;
+  margin: auto;
+  margin-top: 300px;
+  background: white;
+}
+
+.desc{
+  padding: 50px;
+}
+
+.modal-close{
+  color: black;
+  padding: 12px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: silver;
+  float: right;
+  float: top;
+}
+
+.continue{
+  background: white;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  align: left;
+}
+
+.end{
+  margin-left: 5%;
+  width: 90%;
+  color: white;
+  background-color: rgba(22, 19, 19, 1);
+  height: 800px;
+  text-align: center;
+}
+
+.wh{
+  border-color: white;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.bot{
+  display: inline-block;
+  height: 200px;
+  width: 400px;
+  text-align: center;
+  padding: 30px;
+}
+
+.connect{
+  display: inline-block;
+  height: 200px;
+  text-align: center;
+  padding: 80px;
+  float: right;
+}
+
+.icn{
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+}
+
+
+
+
+</style>
+
+</head>
+
+<body class="background">
+    <div><h2 class="josefina">Josefina Body Lotion</h2></div>
+    <hr class="horizontal">
+
+<div class="all">
+
+   <div class="show">
+     <img src="pic_files\item1.png" height="400px" width="400px">
+     <p class="productname"> THE RITUAL OF SAKURA</p>
+     <h3>Cherry Blossom Hand Lotion<h3>
+     <h5>Body Lotion, 70ml<h5>
+     <h4>$12.50<h4>
+       <a href="#openModel" class="LinkModel">ADD TO BAG</a> <!--link to the same page-->
+         <div id="openModel" class="modalWindow msgText"> <!--2 different class-->
+
+          <a href="#" class="modal-close"> X </a>
+        </br>
+        <div class="desc">
+          <div>
+           <h3 style="float: left">IT'S IN THE BAG!</h3></br></br></br>
+           <hr></br>
+           <img src="pic_files\item1.png" height="200px" width="200px" align="left">
+           <p>THE RITUAL OF SAKURA</p>
+           <h2><b>Cherry Blossom Hand Lotion</b></h2>
+           <p>Body Lotion, 70 ml<p>
+           </br>
+           Mix & Match: 3/$33
+         </div>
+         <div style="background-color: silver; height: 150px; width: 110%; margin-left: -30px">
+           <p>Nature and comfort skin from top to toe with the Ritual of Sakura Body Cream from Rituals.</p>
+         <hr></br>
+
+         <a href="#" class="continue"> CONTINUE SHOPPING </a>
+
+         </div>
+        </div>
+       </div>
+   </div>
+
+
+   <div class="show">
+     <img src="pic_files\item2.png" height="400px" width="400px">
+     <p class="productname"> THE RITUAL OF AYURVEDA</p>
+     <h3>Himalaya Honey body cream<h3>
+     <h5>Body cream, 70ml<h5>
+     <h4>$7.50<h4>
+       <a href="#openModel2" class="LinkModel">ADD TO BAG</a> <!--link to the same page-->
+         <div id="openModel2" class="modalWindow msgText"> <!--2 different class-->
+
+          <a href="#" class="modal-close"> X </a>
+        </br>
+        <div class="desc">
+          <div>
+           <h3 style="float: left">IT'S IN THE BAG!</h3></br></br></br>
+           <hr></br>
+           <img src="pic_files\item2.png" height="200px" width="200px" align="left">
+           <p>THE RITUAL OF AYURVEDA</p>
+           <h2><b>Himalaya Honey body cream</b></h2>
+           <p>Body cream, 70 ml<p>
+           </br>
+           Mix & Match: 3/$20
+         </div>
+         <div style="background-color: silver; height: 150px; width: 110%; margin-left: -30px">
+           <p>Hamonise body, mind & soul with this luxurious body cream from the Ritual of Ayurveda.</p>
+         <hr></br>
+
+         <a href="#" class="continue"> CONTINUE SHOPPING </a>
+
+         </div>
+        </div>
+       </div>
+   </div>
+
+
+   <div class="show">
+     <img src="pic_files\item3.png" height="400px" width="400px">
+     <p class="productname"> THE RITUAL OF SAKURA</p>
+     <h3>Organic rice milk body cream<h3>
+     <h5>Body cream, 70ml<h5>
+     <h4>$7.50<h4>
+       <a href="#openModel3" class="LinkModel">ADD TO BAG</a> <!--link to the same page-->
+         <div id="openModel3" class="modalWindow msgText"> <!--2 different class-->
+
+          <a href="#" class="modal-close"> X </a>
+        </br>
+        <div class="desc">
+          <div>
+           <h3 style="float: left">IT'S IN THE BAG!</h3></br></br></br>
+           <hr></br>
+           <img src="pic_files\item3.png" height="200px" width="200px" align="left">
+           <p>THE RITUAL OF SAKURA</p>
+           <h2><b>Organic rice milk body cream</b></h2>
+           <p>Body cream, 70 ml<p>
+           </br>
+           Mix & Match: 3/$20
+         </div>
+         <div style="background-color: silver; height: 150px; width: 110%; margin-left: -30px">
+           <p>Featuring special technology that makes this velvety rich cream easy to apply, it intensely nourishes and irms the skin.</p>
+         <hr></br>
+
+         <a href="#" class="continue"> CONTINUE SHOPPING </a>
+
+         </div>
+        </div>
+       </div>
+   </div>
+</div>
+
+ </br>
+<hr>
+
+ <div class="all">
+
+    <div class="show">
+      <img src="pic_files\gift_set1.png" height="400px" width="400px">
+      <p class="productname"> THE RITUAL OF AYURVEDA</p>
+      <h3>Rebalancing Ritual Gift Set<h3>
+      <h5>Foaming shower gel 200ml, body scrub 125 g,</br>
+        body cream 70ml, hand soap 300ml<h5>
+      <h4>$37.50<h4>
+        <a href="#openModel4" class="LinkModel">ADD TO BAG</a> <!--link to the same page-->
+          <div id="openModel4" class="modalWindow msgText"> <!--2 different class-->
+
+           <a href="#" class="modal-close"> X </a>
+         </br>
+         <div class="desc">
+           <div>
+            <h3 style="float: left">IT'S IN THE BAG!</h3></br></br></br>
+            <hr></br>
+            <img src="pic_files\gift_set1.png" height="200px" width="200px" align="left">
+            <p>THE RITUAL OF AYURVEDA</p>
+            <h2><b>Rebalancing Ritual Gift Set</b></h2>
+            <p>Foaming shower gel 200ml, body scrub 125 g,</br>
+              body cream 70ml, hand soap 300ml<p>
+            </br>
+          $37.50
+          </div>
+          <div style="background-color: silver; height: 150px; width: 110%; margin-left: -30px">
+            <p>Nature and comfort skin from top to toe with the Ritual of Sakura Body Cream from Rituals.</p>
+          <hr></br>
+
+          <a href="#" class="continue"> CONTINUE SHOPPING </a>
+
+          </div>
+         </div>
+        </div>
+    </div>
+
+
+    <div class="show">
+      <img src="pic_files\gift_set2.png" height="400px" width="400px">
+      <p class="productname"> THE RITUAL OF SAKURA</p>
+      <h3>Renewing Treat gift set<h3>
+      <h5>Foaming shower gel 50ml, body scrub 70ml, body </br>cream 70ml, hand soap 110 ml<h5>
+      <h4>$26.00<h4>
+        <a href="#openModel5" class="LinkModel">ADD TO BAG</a> <!--link to the same page-->
+          <div id="openModel5" class="modalWindow msgText"> <!--2 different class-->
+
+           <a href="#" class="modal-close"> X </a>
+         </br>
+         <div class="desc">
+           <div>
+            <h3 style="float: left">IT'S IN THE BAG!</h3></br></br></br>
+            <hr></br>
+            <img src="pic_files\gift_set2.png" height="200px" width="200px" align="left">
+            <p>THE RITUAL OF SAKURA</p>
+            <h2><b>Renewing Treat gift set</b></h2>
+            <p>Foaming shower gel 50ml, body scrub 70ml, body </br>cream 70ml, hand soap 110 ml<p>
+            </br>
+        $26.00
+          </div>
+          <div style="background-color: silver; height: 150px; width: 110%; margin-left: -30px">
+            <p>Hamonise body, mind & soul with this luxurious body cream from the Ritual of Ayurveda.</p>
+          <hr></br>
+
+          <a href="#" class="continue"> CONTINUE SHOPPING </a>
+
+          </div>
+         </div>
+        </div>
+    </div>
+
+
+    <div class="show">
+      <img src="pic_files\gift_set3.png" height="400px" width="400px">
+      <p class="productname"> THE RITUAL OF KARMA</p>
+      <h3>Soothing Ritual gift set<h3>
+      <h5>Foaming shower gel 200 ml, body scrub 125 g,</br>body cream 70 ml, hand soap 300 ml<h5>
+      <h4>$37.50<h4>
+        <a href="#openModel6" class="LinkModel">ADD TO BAG</a> <!--link to the same page-->
+          <div id="openModel6" class="modalWindow msgText"> <!--2 different class-->
+
+           <a href="#" class="modal-close"> X </a>
+         </br>
+         <div class="desc">
+           <div>
+            <h3 style="float: left">IT'S IN THE BAG!</h3></br></br></br>
+            <hr></br>
+            <img src="pic_files\gift_set3.png" height="200px" width="200px" align="left">
+            <p>THE RITUAL OF KARMA</p>
+            <h2><b>Soothing Ritual gift set</b></h2>
+            <p>Foaming shower gel 200 ml, body scrub 125 g,</br>body cream 70 ml, hand soap 300 ml<p>
+            </br>
+        $37.50
+          </div>
+          <div style="background-color: silver; height: 150px; width: 110%; margin-left: -30px">
+            <p>Featuring special technology that makes this velvety rich cream easy to apply, it intensely nourishes and irms the skin.</p>
+          <hr></br>
+
+          <a href="#" class="continue"> CONTINUE SHOPPING </a>
+
+          </div>
+         </div>
+        </div>
+    </div>
+ </div>
+
+  </br>
+
+
+<div class="end">
+
+  <div>
+    <div class="bot"><p>HELP </br></br></br>Customer Service</br> Live Chat</p>
+    </div>
+    <div class="bot"><p>ACCOUNT </br></br></br>Your Account</br>Order Status</p>
+    </div>
+    <div class="bot"><p>SUBSCRIBE</br></br></br>Emails</br>Store Offer and Events</p>
+    </div>
+    <div class="bot"><p>THE MEMCER CARD</br></br></br>Learn More</br>Pay My Bill</p>
+    </div>
+    <hr class="wh">
+  </div></br>
+
+  <div class="connect"><p>CONNECT WITH JOSEFINA BODY CARE COLLECTION</p></br>
+
+    <a href="https://www.facebook.com"><img src="pic_files\icons\facebook.png" class="icn"></a>
+    <a href="https://www.instagram.com"><img src="pic_files\icons\instagram.png" class="icn"></a>
+    <a href="https://www.youtube.com"><img src="pic_files\icons\youtube.png" class="icn"></a>
+    <a href="https://www.pin.com"><img src="pic_files\icons\pin.png" class="icn"></a>
+    <a href="https://www.twitter.com"><img src="pic_files\icons\twitter.png" class="icn"></a>
+  </div></br></br></br></br></br></br></br></br></br></br>
+</br></br></br></br></br></br></br></br>
+
+  <h class="fin">2019F ET710 Project 2 by DongJun_Ane</br>
+    Note:This webpage is a template to create a sales website.
+    All informations and materials used are for ONLY educational purpose.</p>
+  </h>
+
+</div>
+</body>
+
+
+
+</html>

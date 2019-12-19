@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--<link href="index.css" rel="stylesheet" type="text/css">-->
+  <title>aa</title>
+<style>
+.top{
+  font-family: Arial;
+  font-size: 20px;
+  text-align: center;
+}
+
+.info{
+  margin-left: 300px;
+  margin-right: 300px;
+  border: 1px solid silver;
+  color: silver;
+  padding: 20px;
+  text-align: center;
+}
+
+.policy{
+  display: inline;
+  font-size: 20px;
+  font-family: Arial;
+}
+
+.name{
+  font-family: Arial;
+  color: rgba(112, 104, 115, 1);
+  font-size: 20px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.name input{
+  color: silver;
+}
+
+.input{
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 30px;
+  width: 80%;
+}
+
+.exp{
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 30px;
+  width: 30%;
+}
+
+.cvv{
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 30px;
+  width: 10%;
+}
+
+.close{
+  font-family: Arial;
+  font-size: 20px;
+  border: none;
+  background-color: white;
+  float: right;
+  width: 90px;
+  margin-right: 20%;
+  color: lightblue;
+  display: inline;
+}
+
+.Next{
+  font-family: Arial;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  float: right;
+  display: inline;
+  width: 90px;
+  height: 30px;
+  text-align: center;
+}
+
+</style>
+
+</head>
+
+<body>
+</br></br></br>
+  <div class="top"><p>Enter your payment info</p></div>
+  <div class="info"><div style="display: inline; width: 80%;"><img src="pics\lock.png" style="margin-left: 30px; margin-top: 15px;"></div>
+    <div style="display: inline;"><p class="policy">This is a secure PCI DSS encrypted payment. Your information is</br> safe. Privacy Policy | Pricing.</p></div>
+  </div></br></br></br></br>
+
+<div align="center"><img src="pics\visa.png"></div>
+<div class="name">
+<p>*Name (as it appears on card)</br></br>
+  <input type="text" name="fname" value="  Name (as it appears on card)" class="input"></br></br>
+
+  <p>*Card Number (No dashes or spaces)</br></br>
+    <input type="text" name="fname" value="  Card Number (No dashes or spaces)" class="input"></br></br>
+
+    <p>*Expiration Date</br></br>
+      <select class="exp" value="select">
+  <option value="January">January</option>
+  <option value="February">February</option>
+  <option value="March">March</option>
+  <option value="April">April</option>
+  <option value="May">May</option>
+  <option value="June">June</option>
+  <option value="July">July</option>
+  <option value="August">August</option>
+  <option value="September">September</option>
+  <option value="October">October</option>
+  <option value="November">November</option>
+  <option value="December">December</option>
+</select>  /
+<select class="exp" value="select">
+<option value="2019">2019</option>
+<option value="2020">2020</option>
+<option value="2021">2021</option>
+<option value="2022">2022</option>
+<option value="2023">2023</option>
+<option value="2024">2024</option>
+<option value="2025">2025</option>
+<option value="2026">2026</option>
+</select></br></br>
+
+<p>*Security Code - CVV</br></br>
+  <input type="text" name="fname" class="cvv"></br></br></div>
+
+<div>
+    <button class="close" onclick="window.open('', '_self', ''); window.close();">Close</button>
+    <button class="Next">Next</button>
+</div></br></br></br>
+</body>
+
+
+
+</html>

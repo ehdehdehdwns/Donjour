@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- REQUIRED meta tags-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<style>
+
+.navigation{
+  height: 1200px;
+  width: 10%;
+  padding: 20px;
+  float: left;
+}
+
+.gallery{
+  height: 500px;
+  width: 900px;
+}
+
+.explain{
+  width: 900px;
+  margin-top: 50px;
+}
+
+.explain2{
+  width: 900px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.pics{
+  display: inline-block;
+}
+
+</style>
+
+<title>DongJun Assignment #11</title>
+
+</head>
+
+
+
+<body>
+<div class="bg-light navigation">
+  <nav class="nav flex-column">
+      <a class="nav-link" href="#">Overview</a>
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">New York</a>
+        <div class="dropdown-menu bg-light">
+          <a class="nav-link" href="#">Indoor Activities</a>
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Outdoor Activities</a>
+            <div class="dropdown-menu bg-light">
+              <a class="nav-link" href="#">Indoor Activities</a>
+              <a class="nav-link" href="#">Outdoor Activies</a>
+            </div>
+        </div>
+      <a class="nav-link" href="#">Gallery</a>
+      <a class="nav-link" href="#">Contact</a>
+  </nav>
+</div>
+
+<div class="row" style="padding:50px;">
+  <div class="gallery"><img src="moma1.jpg" height="490px" width="800px">
+  </div>
+  <div class="explain">
+    <p>The Red Studio features a small retrospective of Matisse's recent painting, sculpture, and ceramics,</br>
+       displayed in his studio. The artworks appear in color and in detail, while the room's architecture and</br>
+        furnishings are indicated only by negative gaps in the red surface. The composition's central axis is</br>
+         a grandfather clock without hands - it is as if, in the oasis of the artist's studio, time were suspended.
+    </p>
+<button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal" style="margin-top:80px; margin-left:300px;">
+  More Information
+</button>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Contact <i>MoMa</i> Gallery</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        </button>
+      </div>
+      <div class="modal-body">
+        <p><i>
+        <b>General Information</b></br></br>
+        (212) 708-9400</br>
+        Information Request</br></br>
+        <b>Membership & Support</b></br>
+        Membership</b></br>
+        (888) 999-8861 (toll-free in the U.S.)</br>
+        membership@moma.org</br></br>
+        Corporate Membership</br>
+        corporate_membership@moma.org</br></br>
+        Exhibition Sponsorship</br>
+        sponsorship@moma.org</br></br></br>
+        <b>Library</b></br>
+        (212) 708-9433</br>
+        library@moma.org</br></br>
+        <b>Archives</b></br>
+        (212) 708-9617</br>
+        archives@moma.org</br>
+        </i></p>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="explain2">
+    <p>By 2014, MoMA was ready to press reset, and its curators had funds they could rely on, as the museum went from</br>
+       rich to crazy rich. In 2016, MoMA received $100 million from the media mogul David Geffen, whose name adorns</br>
+        a new wing. This year, it received a record gift of $200 million from the estate of David Rockefeller, the philanthropist</br>
+         and banker who died in 2017. The cardboard copies of Brancusi sculptures stand in a former café space that has been reclaimed as a gallery.
+    </p><button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal" style="margin-top:80px; margin-left:300px;">
+      More Information
+    </button>
+
+  </div>
+  <div><img src="moma2.jpg" height="490px" width="800px">
+  </div>
+</div>
+
+
+
+</body>
+</html>

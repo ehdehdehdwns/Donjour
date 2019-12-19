@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--<link href="index.css" rel="stylesheet" type="text/css">-->
+  <title>Modal Window</title>
+<style>
+
+.LinkModel{
+  background-color: orange;
+  border-radius :20px;
+  text-align: center;
+  font-size: 20px;
+  padding :20px;
+  text-decoration: none;
+}
+
+.modalWindow{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  rgba(55, 112, 20, 0.76);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modalWindow:target{
+  opacity: 1;
+  pointer-events: auto;
+  transition: ease-in 0.5s;
+}
+
+.msgText{
+  position: relative;
+  width: 700px;
+  height: 500px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 200px;
+  background: linear-gradient(to top right, black, white);
+}
+
+.msgText img{
+  width: 30%;
+  height: auto;
+  margin-left: 25%;
+}
+
+.modal-close{
+  color: #00d9ff;
+  padding: 12px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: purple;
+}
+
+.msgText h3{
+  padding: 20px;
+  color: lightblue;
+}
+
+.msgText p{
+  padding: 20px;
+  margin: 20px;
+  margin-top: 20px;
+  text-align: justify;
+  background-color: powderblue;
+  color: purple;
+  font-weight: bold;
+}
+
+
+</style>
+
+</head>
+
+<body>
+<a href="#openModel" class="LinkModel">Open Modal link</a> <!--link to the same page-->
+  <div id="openModel" class="modalWindow msgText"> <!--2 different class-->
+
+  <h3> Modal Window by DongJun Ane</h3>
+
+  <p> This is a paragraph in the message window, You could do a lot of things here LinkModel.
+  have a pop-up that shows promotion information, images or create a login/ register from for users.
+  </p>
+  <img src="cat.JPEG" alt="image of cat" title="Cat">
+  <a href="#" class="modal-close">X</a>
+</div>
+</body>
+
+
+
+</html>

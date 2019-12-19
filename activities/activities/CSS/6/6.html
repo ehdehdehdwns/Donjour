@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--<link href="index.css" rel="stylesheet" type="text/css">-->
+  <title>Products!</title>
+<style>
+.top{
+  background-color: rgba(217, 223, 232, 1);
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.headd{
+  font-family: Arial;
+}
+
+.all{
+  font-family: Arial;
+  color: rgba(0, 0, 0, 0.68);
+  display: inline;
+  margin-right: 60px;
+}
+
+.product{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.modalWindow{
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(31, 31, 31, 1);
+}
+
+.modalWindow:target{
+  opacity: 1;
+  pointer-events: auto;
+  transition: ease-in 0.1s;
+}
+
+.modal-close{
+  color: silver;
+  font-weight: bold;
+  text-decoration: none;
+  align: right;
+}
+
+.LinkModel{
+  text-decoration: none;
+  font-family: Arial;
+  display: inline block;
+}
+
+.red{
+  padding: 100px;
+  margin-left: 500px;
+  margin-right: 500px;
+  background: linear-gradient(to bottom , rgba(204, 97, 97, 1) 50%, white 50%);
+}
+
+.cart{
+  border-radius: 10px;
+  height: 50px;
+  width: 120px;
+  background-color: red;
+  color: white;
+  margin-left: 300px;
+  margin-top: -100px;
+}
+
+
+</style>
+</head>
+
+<body>
+<div class="top"><p class="headd" style="font-size: 50px; padding: 15px">All Products</p>
+  <div class="all" style="margin-left: 15px">Type</div>
+  <div class="all">Size</div>
+  <div class="all">Material</div>
+  <div class="all">Gender</div>
+  <div class="all">Color</div>
+  <div class="all">Category</div>
+  <div class="all">Brand</br></br></br></div>
+</div></br></br></br>
+
+<div class="product">
+  <img src="pics\black.jpg" height="500" width="500">
+  <img src="pics\white.jpg" height="500" width="400">
+</div>
+
+<a href="#openModel" class="LinkModel"><div style="margin-left: 250px ;margin-top: 20px;">BLACK SHIRT for MEN</br>Clothing</br>$500</div></a> <!--link to the same page-->
+  <div id="openModel" class="modalWindow" align="center">
+  </br></br></br>
+   <div>  <a href="#" class="modal-close"> X </a>
+     <div class="red">
+      <img src="pics\black.jpg" height="300" width="300">
+        <h3>This is BLACK SHIRT</h3></br>
+         <h4>Qty: <input type="text" name="fname"></h4>
+         <form action="2ndpg.html" method="get" target="_blank">
+         <button class="cart" type="submit">ADD TO CART</button>
+     </div></div></div>
+
+
+  <a href="#openModel" class="LinkModel"><div style="margin-left: 700px; margin-top: -60px">WHITE SHIRT for WOMEN</br>Clothing</br>$500</div></a> <!--link to the same page-->
+    <div id="openModel" class="modalWindow" align="center">
+    </br></br></br>
+     <div>  <a href="#" class="modal-close"> X </a>
+       <div class="red">
+        <img src="pics\white.jpg" height="300" width="200">
+          <h3>This is WHITE SHIRT</h3></br>
+            <h4>Qty: <input type="text" name="fname"></h4>
+           <form action="2ndpg.html" method="get" target="_blank">
+           <button class="cart" type="submit">ADD TO CART</button>
+       </div></div></div>
+
+
+</body>
+
+</html>
